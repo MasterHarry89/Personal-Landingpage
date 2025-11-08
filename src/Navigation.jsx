@@ -8,10 +8,28 @@ const Navigation = (props) => {
         <div className="nav-buttons">
           <ul className="nav-links">
             <li>
-              <a className="nav-button hide-on-mobile">ABOUT ME</a>
+              <a
+                className="nav-button hide-on-mobile"
+                onClick={() => {
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                ABOUT ME
+              </a>
             </li>
             <li>
-              <a className="nav-button hide-on-mobile">TECHNOLOGIES</a>
+              <a
+                className="nav-button hide-on-mobile"
+                onClick={() => {
+                  document.getElementById("technologies")?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                TECHNOLOGIES
+              </a>
             </li>
             <li>
               <a
@@ -27,7 +45,16 @@ const Navigation = (props) => {
             </li>
             <li>
               {" "}
-              <a className="nav-button hide-on-mobile">CONTACT</a>
+              <a
+                className="nav-button hide-on-mobile"
+                onClick={() => {
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                CONTACT
+              </a>
             </li>
             <li>
               <a

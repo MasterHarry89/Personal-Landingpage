@@ -3,7 +3,7 @@ import facebook from "./assets/facebook.png";
 import linkedin from "./assets/linkedin.png";
 const Contact = () => {
   return (
-    <div className="contact section">
+    <section className="contact section" id="contact">
       <h2>DO YOU HAVE A PROJECT TO DISCUSS?</h2>
       <div className="contact-content">
         <h3>GET IN TOUCH</h3>
@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Contact;

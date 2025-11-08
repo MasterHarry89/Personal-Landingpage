@@ -110,7 +110,7 @@ a {
   right: 0;
   top: 0;
   height: 100vh;
-  width: 25vw;
+  width: 60vw;
   background-color: white;
   color: black;
 }
@@ -177,12 +177,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .left-side p {
   margin-top: 2%;
   border: px solid white;
-  padding-left: 4%;
 }
 .right-side {
   border: px solid white;
@@ -196,18 +195,6 @@ a {
 .highlight {
   color: rgb(255, 0, 191);
 }
-
-.logos {
-  margin-top: 2rem;
-  max-width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
 .skills,
 .projects,
 .contact {
@@ -221,17 +208,36 @@ a {
 
   padding-right: 10%;
 }
+.logos {
+  margin-top: 2rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+.express {
+  width: 10%;
+  height: auto;
+  margin-top: 2rem;
+}
+
 .cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border: px solid white;
 }
 .project-card {
   position: relative;
   min-width: 150px;
   width: 20%;
-  height: 50vh;
+  height: 25vh;
   border: 1px solid rgb(50, 71, 105);
   border-radius: 20px;
   padding: 2%;
@@ -683,5 +689,13 @@ a {
     border: px solid white;
     border-radius: 50%;
     margin-left: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .hamburger-menu-btn {
+    display: block;
   }
 }
