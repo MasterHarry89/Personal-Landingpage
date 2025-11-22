@@ -405,6 +405,7 @@ a {
     0 0 80px 30px rgba(255, 0, 255, 0.009),
     0 0 80px 30px rgba(255, 0, 255, 0.0003);
   filter: blur(30px);
+  overflow: hidden;
 }
 .neon-fog-circle3 {
   z-index: 2;
@@ -596,6 +597,13 @@ a {
 /* Klíčová animace pulse je také odstraněna, protože už se nepoužívá */
 /* @keyframes pulse {...} NEPOUŽÍVAT */
 @media (max-width: 900px) {
+  .neon-fog-circle2 {
+    inset: 0;
+  }
+  #root {
+    max-width: 100%;
+    overflow: hidden;
+  }
   .landingpage {
     width: 100vw;
     overflow: hidden;
@@ -603,6 +611,7 @@ a {
   .section {
     padding-left: 10vw;
     padding-right: 10vw;
+    max-width: 100%;
   }
   .hero {
     font-size: 0.8rem;
@@ -695,6 +704,22 @@ a {
     border: px solid white;
     border-radius: 50%;
     margin-left: 10%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-social-media {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 1200px) {
