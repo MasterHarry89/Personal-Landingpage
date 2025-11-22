@@ -53,7 +53,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 .section {
   min-height: 80vh;
@@ -235,6 +236,10 @@ a {
 }
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   min-width: 150px;
   width: 20%;
   height: 25vh;
@@ -243,7 +248,7 @@ a {
   padding: 2%;
   color: rgb(206, 224, 252);
   transition: transform 0.3s ease;
-  background: rgba (255, 255, 255, 0.6);
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -593,6 +598,7 @@ a {
 @media (max-width: 900px) {
   .landingpage {
     width: 100vw;
+    overflow: hidden;
   }
   .section {
     padding-left: 10vw;
