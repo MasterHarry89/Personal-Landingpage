@@ -81,16 +81,56 @@ const Navigation = (props) => {
           <img src={props.profile} className="nav-profile-picture" />
 
           <li>
-            <a className="nav-li">ABOUT ME</a>
+            <a
+              className="nav-li"
+              onClick={() => {
+                document
+                  .getElementById("hero")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                props.onToggleMenu(false);
+              }}
+            >
+              ABOUT ME
+            </a>
           </li>
           <li>
-            <a className="nav-li">TECHNOLOGIES</a>
+            <a
+              className="nav-li"
+              onClick={() => {
+                document
+                  .getElementById("technologies")
+                  .scrollIntoView({ behavior: "smooth" });
+                props.onToggleMenu(false);
+              }}
+            >
+              TECHNOLOGIES
+            </a>
           </li>
           <li>
-            <a className="nav-li">PROJECTS</a>
+            <a
+              className="nav-li"
+              onClick={() => {
+                document
+                  .getElementById("projects")
+                  .scrollIntoView({ behavior: "smooth" });
+                props.onToggleMenu(false);
+              }}
+            >
+              PROJECTS
+            </a>
           </li>
           <li>
-            <a className="nav-li">CONTACT</a>
+            <a
+              className="nav-li"
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" });
+                props.onToggleMenu(false);
+              }}
+            >
+              CONTACT
+            </a>
           </li>
           <li></li>
         </ul>

@@ -1,6 +1,7 @@
 import strava from "./assets/strava.png";
 import facebook from "./assets/facebook.png";
 import linkedin from "./assets/linkedin.png";
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <section className="contact section" id="contact">
@@ -15,9 +16,15 @@ const Contact = () => {
           <div className="social-media">
             <p>SOCIAL MEDIA</p>{" "}
             <div className="social-media-icons">
-              <img className="social-icons" src={facebook} alt="facebook" />
-              <img className="social-icons" src={linkedin} alt="linkedin" />
-              <img className="social-icons" src={strava} alt="strava" />
+              <Link to="https://www.facebook.com/nicolas.fencl/">
+                <img className="social-icons" src={facebook} alt="facebook" />
+              </Link>
+              <Link to="www.linkedin.com/in/nicolas-fencl-9244aa189">
+                <img className="social-icons" src={linkedin} alt="linkedin" />
+              </Link>
+              <Link to="https://www.strava.com/athletes/8858275">
+                <img className="social-icons" src={strava} alt="strava" />
+              </Link>
             </div>
           </div>
         </div>
