@@ -54,7 +54,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .section {
   min-height: 80vh;
@@ -605,6 +605,7 @@ a {
     max-width: 100%;
     overflow: hidden;
   }
+
   .landingpage {
     width: 100vw;
     overflow: hidden;
@@ -613,6 +614,9 @@ a {
     padding-left: 10vw;
     padding-right: 10vw;
     max-width: 100%;
+  }
+  .section h2 {
+    font-size: 2.5rem;
   }
   .hero {
     font-size: 0.8rem;
@@ -630,7 +634,6 @@ a {
 
   .left-side {
     width: 100%;
-
     max-width: 100%;
     padding: 5%;
     display: flex;
@@ -639,7 +642,7 @@ a {
     align-items: center;
   }
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   .left-side p {
