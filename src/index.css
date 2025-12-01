@@ -597,7 +597,7 @@ a {
 
 /* Klíčová animace pulse je také odstraněna, protože už se nepoužívá */
 /* @keyframes pulse {...} NEPOUŽÍVAT */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .neon-fog-circle2 {
     inset: 0;
   }
@@ -642,7 +642,7 @@ a {
     align-items: center;
   }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .left-side p {
@@ -770,5 +770,13 @@ a {
   }
   .hamburger-menu-btn {
     display: block;
+  }
+}
+@media (max-width: 1600px) {
+  .navigation {
+    height: 10vh;
+  }
+  .hero h1 {
+    font-size: 3rem;
   }
 }

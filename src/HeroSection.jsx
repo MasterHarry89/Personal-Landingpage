@@ -18,7 +18,16 @@ const HeroSection = (props) => {
           </p>
           <div className="buttons">
             <button className="neon-btn">Get my CV</button>
-            <button className="neon-btn2">Let´s talk</button>
+            <button
+              className="neon-btn2"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Let´s talk
+            </button>
           </div>
         </div>
         <div className="right-side">
