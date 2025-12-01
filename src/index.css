@@ -772,11 +772,11 @@ a {
     display: block;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .navigation {
     height: 10vh;
   }
   .hero h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
