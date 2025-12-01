@@ -647,14 +647,16 @@ a {
   }
   .left-side p {
     margin-top: 2%;
+    font-size: 1rem;
     text-align: center;
   }
   .right-side {
     width: 100%;
     height: 100%;
+    padding-top: 1rem;
   }
   .right-side img {
-    width: 50%;
+    width: 30%;
   }
   .navigation {
     width: 90%;
